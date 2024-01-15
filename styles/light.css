@@ -1,12 +1,56 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root.theme_light {
+  --bg-color: #fff1f7;
+  --main-font: 'IBM Plex Mono';
+  --menu-color: #353430;
+  --header-color: #ffc2e6;
+  --shadow-color: #ff0070;
+  --text-color: #353430;
+  --navigation-color: #353430;
+  --accent-color: #ff8dcb;
+  --border-light: 1px solid #353430;
+  --decorated-zone: #353430;
+  --rec-text-color: #fff1f7;
+  --rec-color: #fff1f7;
+  --footer-title: #ffc2e6;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff1f7;
+    --main-font: 'IBM Plex Mono';
+    --menu-color: #353430;
+    --header-color: #ffc2e6;
+    --shadow-color: #ff0070;
+    --text-color: #353430;
+    --navigation-color: #353430;
+    --accent-color: #ff8dcb;
+    --border-light: 1px solid #353430;
+    ---decorated-zone: #353430;
+    --rec-text-color: #fff1f7;
+    --rec-color: #fff1f7;
+    --footer-title: #ffc2e6;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #fff1f7;
+  --main-font: 'IBM Plex Mono';
+  --menu-color: #353430;
+  --header-color: #ffc2e6;
+  --shadow-color: #ff0070;
+  --text-color: #353430;
+  --navigation-color: #353430;
+  --accent-color: #ff8dcb;
+  --border: #353430;
+  --border-light: 1px solid #353430;
+  --decorated-zone: #353430;
+  --rec-text-color: #fff1f7;
+  --rec-color: #fff1f7;
+  --footer-title: #ffc2e6;
+
+  background-image: url(../images/cover-image-light.png);
 }
