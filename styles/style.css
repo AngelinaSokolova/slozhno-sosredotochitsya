@@ -3,12 +3,9 @@
   background-image: var(--background-image);
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   max-width: 1024px;
   min-width: 375px;
-}
-
-.container {
-  background-color: var(--bg-color);
 }
 
 .header {
