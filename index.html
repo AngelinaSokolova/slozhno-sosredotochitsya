@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
   </head>
-  <body class="page theme_dark">
+  <body class="page">
     <header class="header decorated-zone">
-      <div class="rec-text"></div>
-      <nav class="header__theme-menu"> 
+      <div class="rec-text" aria-hidden="true">REC</div>
+      <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
@@ -46,13 +46,13 @@
       </nav>
       <h1 class="header__title">no focus</h1>
       <p class="header__text decorated">Что делать, когда не можешь делать ничего<br>
-          Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+      Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+        <script src="./scripts/script.js"></script>
     </header>
-    <script src="./scripts/script.js"></script>
     <main class="container">
-      <section class="section-first">
-        <h2 class="nav__title">Почему сосредоточиться так <br> сложно</h2>
-        <ul class="article__list-first">
+      <section class="section-concentrate">
+        <h2 class="section__main-title">Почему сосредоточиться так <br> сложно</h2>
+        <ul class="article__list-concentrate">
           <li class="article__list-item">
             <article>
               <h3 class="section__title decorated">Многозадачность</h3>
@@ -63,80 +63,78 @@
           </li>
         </ul>
       </section>
-      <section class="section-two">
-        <h2 class="nav__title">Что снижает концентрацию<br>внимания?</h2>
-        <ul class="article__list-two">
+      <section class="section-about-attention">
+        <h2 class="section__main-title">Что снижает концентрацию<br>внимания?</h2>
+        <ul class="article__list-about-attention">
           <li class="article__list-item"> 
             <article>
-              <h3 class="section__title-two decorated">Многозадачность</h3>
-              <p class="section__text-two">Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш мозг постоянно «сканировать» окружающую среду на предмет опасности. Например, читать новости вместо работы. Но быть собранными всё время — невозможно. Концентрация — мышца, и она может не выдержать, если не давать ей отдохнуть.</p>
+              <h3 class="section__title-about-attention decorated">Многозадачность</h3>
+              <p class="section__text-about-attention">Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш мозг постоянно «сканировать» окружающую среду на предмет опасности. Например, читать новости вместо работы. Но быть собранными всё время — невозможно. Концентрация — мышца, и она может не выдержать, если не давать ей отдохнуть.</p>
             </article>
           </li>
           <li class="article__list-item"> 
             <article>    
-              <h3 class="section__title-two decorated">Еда</h3>
-              <p class="section__text-two">«Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно доставляют в мозг энергию и помогают ему лучше работать. Но уходит эта энергия также быстро, как и приходит. А мы в результате попадаем на «углеводные качели»: как только действие «быстрых углеводов» заканчивается, мы чувствуем усталость и сонливость. И хотим ещё больше быстрых углеводов.</p>
+              <h3 class="section__title-about-attention decorated">Еда</h3>
+              <p class="section__text-about-attention">«Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно доставляют в мозг энергию и помогают ему лучше работать. Но уходит эта энергия также быстро, как и приходит. А мы в результате попадаем на «углеводные качели»: как только действие «быстрых углеводов» заканчивается, мы чувствуем усталость и сонливость. И хотим ещё больше быстрых углеводов.</p>
             </article>
           </li>
           <li class="article__list-item"> 
             <article> 
-              <h3 class="section__title-two decorated">Гаджеты</h3>
-              <p class="section__text-two">Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными утятами. В результате мозг пытается переключиться с одной задачи на другую — и просто не может. А чтобы вернуться к состоянию полной концентрации, человеку в среднем нужно 20 минут. Вот и получается, что чем больше времени мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.</p>
+              <h3 class="section__title-about-attention decorated">Гаджеты</h3>
+              <p class="section__text-about-attention">Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными утятами. В результате мозг пытается переключиться с одной задачи на другую — и просто не может. А чтобы вернуться к состоянию полной концентрации, человеку в среднем нужно 20 минут. Вот и получается, что чем больше времени мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.</p>
             </article>
           </li>
         </ul>     
       </section>
-      <section class="section-three">
-        <h2 class="nav__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
-        <ul class="article__list-three">
+      <section class="section-rules">
+        <h2 class="section__main-title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
+        <ul class="article__list-rules">
           <li class="article__list-item"> 
             <article>
-              <h3 class="section__title-three decorated">5 простых (на самом деле не очень) советов</h3>
-              <h4 class="section__title-three-normal decorated">Представьте небо и облака</h4>
+              <h3 class="section__title-rules decorated">5 простых (на самом деле не очень) советов</h3>
+              <h4 class="section__title-rules-normal decorated">Представьте небо и облака</h4>
               <p class="section__text">Или листья в ручье. Тут дело в лёгкой медитации, которая помогает успокоиться. Ведь часто именно тревожные мысли о сложных задачах как раз и мешают эти сложные задачи делать. В такие моменты можно закрыть глаза и представить, что чистое небо — это вы, а облака — тревожные мысли. И сколько бы их ни было — ясное небо всегда будет где-то там, за тучами, и никуда не денется. Это упражнение поможет вернуться в настоящий момент, а не волноваться о потенциальных проблемах из будущего.</p>
             </article>
           </li>
           <li class="article__list-item">
             <article>
-              <h4 class="section__title-three-normal decorated">Включите музыку</h4>
+              <h4 class="section__title-rules-normal decorated">Включите музыку</h4>
               <p class="section__text">Но не любую, и не любимую. Любимая может быть связана с сильными положительными эмоциями, которые тоже очень сильно отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать включить плейлист в «белым шумом» или нейромузыкой.</p>
             </article>
           </li>
           <li class="article__list-item">
             <article>
-              <h4 class="section__title-three-normal decorated">Прогуляйтесь</h4>
+              <h4 class="section__title-rules-normal decorated">Прогуляйтесь</h4>
               <p class="section__text">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328">показал</a>, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.</p>
             </article>
           </li>
           <li class="article__list-item">
             <article>
-              <h4 class="section__title-three-normal decorated">Хорошо ешьте</h4>
+              <h4 class="section__title-rules-normal decorated">Хорошо ешьте</h4>
               <p class="section__text">Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые препятствуют резким скачкам сахара в крови. Например, с высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.</p>
             </article>
           </li>
           <li class="article__list-item">
             <article>
-              <h4 class="section__title-three-normal decorated">Читайте</h4>
+              <h4 class="section__title-rules-normal decorated">Читайте</h4>
               <p class="section__text">Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы прочитать пост в соцсети, достаточно нескольких минут или даже секунд. А вот интересная книга способна затянуть и на несколько часов и круто тренирует направленное внимание.</p>
             </article>
           </li>
         </ul>
       </section>
       <section class="gallery">
-        <h3 class="section-four decorated">А можно в картинках?</h3>
-        <div class="gallery-grid">
-          <div class="gallery__list pic1"></div>
-          <div class="gallery__list pic2"></div>
-          <div class="gallery__list pic3"></div>
-          <div class="gallery__list pic4"></div>
-          <div class="gallery__list pic5"></div>
-        </div>    
+        <h4 class="section-gallery decorated">А можно в картинках?</h4>
+        <ul class="gallery__grid">
+          <li class="gallery__image"><img class= "gallery__image-main" src="/images/sunset.png" alt="Рассвет"></li>
+          <li class="gallery__image"><img class= "gallery__image-main" src="/images/ice-cream.png" alt="Мороженое"></li>
+          <li class="gallery__image"><img class= "gallery__image-main" src="/images/tape.png" alt="Кассета"></li>
+          <li class="gallery__image"><img class= "gallery__image-main" src="/images/books.png" alt="Книги"></li>
+          <li class="gallery__image"><img class= "gallery__image-main" src="/images/street.png" alt="Улица"></li>
+        </ul>
       </section>
     </main>
-    <footer>
-      <section class="footer__section container decorated-zone">
-        <h5 class="footer__title">focus</h5>
-      </section>
+    <footer class="footer container decorated-zone">
+      <h1 class="footer__title">focus</h1>
     </footer>
   </body>
 </html>
