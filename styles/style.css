@@ -277,7 +277,7 @@
 @media (max-width: 376px) {
   .section__text {
     width: 355px;
-    padding-top: 2px;
+    padding-top: 3px;
   }
 }
 
@@ -397,12 +397,12 @@ a:focus-visible {
   .section-rules {
     grid-template-columns: repeat(1, 355px);
     padding-left: 10px;
-    margin-top: 55px;
+    margin-top: 50px;
   }
 }
 
 .article__list-rules {
-  width: 200%;
+  width: 206%;
 }
 
 @media (max-width: 768px) {
