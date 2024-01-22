@@ -1,10 +1,10 @@
 :root {
-  background-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --main-font: 'IBM Plex Mono';
   --menu-color: #ff0070;
-  --header-color: #db00ff;
+  --title-color: #db00ff;
   --shadow-color: #ff0070;
+  --shadow-small-color: #ff0070;
   --text-color: #f1b2ce;
   --text-decorated: #000028;
   --navigation-color: #ff0070;
@@ -14,5 +14,5 @@
   --decorated-zone: #ff0070;
   --rec-text-color: #ff0070;
   --rec-color: #ff0070;
-  --footer-title: #db00ff;
+  --background-image: url(../images/cover-image-dark.png);
 }
